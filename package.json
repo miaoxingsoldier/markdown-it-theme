@@ -4,8 +4,10 @@
   "description": "A markdown-it plugin for theme customization.",
   "main": "index.js",
   "scripts": {
+    "prepublish": "npm run build:log",
     "git-cz": "git-cz",
     "bootstrap": "npm i && git config --local \"alias.cz\" \"!npm run git-cz\"",
+    "build:log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md && git commit -m \"docs(changelog): update CHANGELOG.md\"",
     "lint": "eslint --fix index.js lib test",
     "test": "jest"
   },
@@ -18,7 +20,7 @@
     "class",
     "style"
   ],
-  "author": "",
+  "author": "miaoxingsoldier",
   "license": "Unlicense",
   "files": [
     "README.md",
