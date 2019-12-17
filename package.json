@@ -4,10 +4,11 @@
   "description": "A markdown-it plugin for theme customization.",
   "main": "index.js",
   "scripts": {
-    "prepublish": "npm run build:log",
+    "prepublish": "npm run build:ver",
     "git-cz": "git-cz",
     "bootstrap": "npm i && git config --local \"alias.cz\" \"!npm run git-cz\"",
     "build:log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md && git commit -m \"docs(changelog): update CHANGELOG.md\"",
+    "build:ver": "conventional-recommended-bump -p angular | xargs npm --no-git-tag-version version && npm run build:log && git checkout -- package.json && conventional-recommended-bump -p angular | xargs npm version -m 'chore(release): %s'",
     "lint": "eslint --fix index.js lib test",
     "test": "jest"
   },
