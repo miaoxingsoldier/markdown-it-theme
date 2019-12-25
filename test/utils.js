@@ -2,8 +2,8 @@ var path = require('path')
 var fs = require('fs')
 
 var utils = {
-  getTestCase: function (theme) {
-    var file = fs.readFileSync(path.resolve(__dirname, 'index.txt'), 'utf-8')
+  getTestCase: function (testFile, theme) {
+    var file = fs.readFileSync(path.resolve(__dirname, testFile), 'utf-8')
     var source = file.replace(/@theme/g, theme)
     var blocks = source.split(/\s@title/g)
     var tests = blocks.map(function (block, index) {
