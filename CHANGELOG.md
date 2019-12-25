@@ -1,3 +1,13 @@
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/miaoxingsoldier/markdown-it-theme/compare/v0.2.0...v0.3.0) (2019-12-25)
+
+
+### Features
+
+* **theme.js:** add class attr for token with tag ([1d41553](https://github.com/miaoxingsoldier/markdown-it-theme/commit/1d41553))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/miaoxingsoldier/markdown-it-theme/compare/v0.1.0...v0.2.0) (2019-12-17)
 
