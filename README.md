@@ -34,6 +34,6 @@ console.log(result)
 
 ### options
 
-Name              | Description            | Default
-------------------|------------------------|-----------
-`theme`           | The class of html tag. | undefined
+Name              | Type     | Description            | Default
+------------------|----------|------------------------|-----------
+`theme`           | string   | The class of html tag. | undefined
