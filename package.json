@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-theme",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A markdown-it plugin for theme customization.",
   "main": "index.js",
   "scripts": {
