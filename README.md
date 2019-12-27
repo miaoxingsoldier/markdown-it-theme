@@ -37,3 +37,4 @@ console.log(result)
 Name              | Type     | Description            | Default
 ------------------|----------|------------------------|-----------
 `theme`           | string   | The class of html tag. | undefined
+`alias`           | function | Alias class of html tag. | undefined
