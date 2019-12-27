@@ -1,3 +1,13 @@
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/miaoxingsoldier/markdown-it-theme/compare/v0.3.0...v0.4.0) (2019-12-27)
+
+
+### Features
+
+* **theme.js:** add alias option ([38cc9e8](https://github.com/miaoxingsoldier/markdown-it-theme/commit/38cc9e8))
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/miaoxingsoldier/markdown-it-theme/compare/v0.2.0...v0.3.0) (2019-12-25)
 
