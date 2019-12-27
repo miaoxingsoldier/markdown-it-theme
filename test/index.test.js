@@ -19,3 +19,22 @@ describe('markdown-it-theme: theme', () => {
     })
   })
 })
+
+describe('markdown-it-theme: alias', () => {
+  var theme = 'custom-md-theme'
+  var md = new MarkdownIt()
+    .use(themePlugin, {
+      theme: theme,
+      alias: function (theme, tag) {
+        return theme + '__' + tag
+      }
+    })
+
+  var testcases = utils.getTestCase('alias.txt', theme)
+  testcases.forEach(testcase => {
+    it(testcase.title, () => {
+      var result = md.render(testcase.input)
+      expect(result.trim()).toBe(testcase.output)
+    })
+  })
+})
